@@ -20,10 +20,16 @@ RUN apt-get install -y patch
 RUN apt-get install -y wget
 RUN apt-get install -y bzip2
 RUN apt-get install -y file
+RUN apt-get install -y zstd
+RUN apt-get install -y liblz4-tool
 
 RUN apt-get install -y locales
 RUN locale-gen en_US.UTF-8
 ENV LANG=en_US.UTF-8
 
-WORKDIR /workdir
+RUN useradd -ms /bin/bash ubuntu
+
+USER ubuntu
+
+WORKDIR /home/ubuntu
 
