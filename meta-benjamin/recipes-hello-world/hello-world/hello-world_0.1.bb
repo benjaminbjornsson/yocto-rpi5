@@ -3,7 +3,9 @@ DESCRIPTION = "Simple recipe for educational purpose"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=85a7df83257cda6648ce80e06a9db0e8"
 
-SRC_URI = "git://github.com/benjamin-bjornsson-ab/hello-world.git;branch=main;protocol=https"
+SRC_URI = "git://github.com/benjamin-bjornsson-ab/hello-world.git;branch=main;protocol=https \
+           file://0001-Change-printout-using-devtool.patch \
+           "
 SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
