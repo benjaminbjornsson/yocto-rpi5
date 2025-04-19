@@ -1,3 +1,9 @@
+### Initialize submodules
+```
+git submodule init
+git submodule update
+```
+
 ### Docker-Based Workflow on macOS
 
 Since macOS cannot natively run Yocto builds, use the provided Docker image with a mounted volume:
@@ -11,7 +17,7 @@ Inside the container:
 cp -r /workdir/build-rpi5 .
 
 # Source the build environment
-source poky/oe-init-build-env build-rpi5
+source /workdir/poky/oe-init-build-env build-rpi5
 You can now run BitBake as usual:
 
 bitbake core-image-base
