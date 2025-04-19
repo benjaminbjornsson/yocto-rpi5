@@ -1,3 +1,9 @@
+### Initialize submodules
+```
+git submodule init
+git submodule update
+```
+
 ### Docker-Based Workflow on macOS
 
 Since macOS cannot natively run Yocto builds, use the provided Docker image with a mounted volume:
