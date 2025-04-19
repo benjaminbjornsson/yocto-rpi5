@@ -11,7 +11,7 @@ Inside the container:
 cp -r /workdir/build-rpi5 .
 
 # Source the build environment
-source poky/oe-init-build-env build-rpi5
+source /workdir/poky/oe-init-build-env build-rpi5
 You can now run BitBake as usual:
 
 bitbake core-image-base
